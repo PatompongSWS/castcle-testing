@@ -1,0 +1,82 @@
+{
+  "npmScope": "castcle-api",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "authentications": {
+      "tags": []
+    },
+    "feeds": {
+      "tags": []
+    },
+    "metadata": {
+      "tags": []
+    },
+    "notifications": {
+      "tags": []
+    },
+    "searches": {
+      "tags": []
+    },
+    "shared-constants": {
+      "tags": []
+    },
+    "shared-data-access-constants": {
+      "tags": []
+    },
+    "shared-data-access-interface-api": {
+      "tags": []
+    },
+    "shared-data-access-interface-jwt": {
+      "tags": []
+    },
+    "shared-data-access-interface-user": {
+      "tags": []
+    },
+    "shared-interface-api": {
+      "tags": []
+    },
+    "shared-nest-util-i18n": {
+      "tags": []
+    },
+    "shared-util-hash-password": {
+      "tags": []
+    },
+    "shared-util-i18n": {
+      "tags": []
+    },
+    "shared-util-jwt": {
+      "tags": []
+    },
+    "shared-utils": {
+      "tags": []
+    },
+    "users": {
+      "tags": []
+    }
+  }
+}

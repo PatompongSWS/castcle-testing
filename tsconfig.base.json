@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@castcle-api/shared/constants": ["libs/shared/constants/src/index.ts"],
+      "@castcle-api/shared/data-access/constants": [
+        "libs/shared/data-access/constants/src/index.ts"
+      ],
+      "@castcle-api/shared/data-access/interface/api": [
+        "libs/shared/data-access/interface/api/src/index.ts"
+      ],
+      "@castcle-api/shared/data-access/interface/jwt": [
+        "libs/shared/data-access/interface/jwt/src/index.ts"
+      ],
+      "@castcle-api/shared/data-access/interface/user": [
+        "libs/shared/data-access/interface/user/src/index.ts"
+      ],
+      "@castcle-api/shared/interface/api": [
+        "libs/shared/interface/api/src/index.ts"
+      ],
+      "@castcle-api/shared/nest/util/i18n": [
+        "libs/shared/nest/util/i18n/src/index.ts"
+      ],
+      "@castcle-api/shared/util/hash-password": [
+        "libs/shared/util/hash-password/src/index.ts"
+      ],
+      "@castcle-api/shared/util/i18n": ["libs/shared/util/i18n/src/index.ts"],
+      "@castcle-api/shared/util/jwt": ["libs/shared/util/jwt/src/index.ts"],
+      "@castcle-api/shared/utils": ["libs/shared/utils/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
